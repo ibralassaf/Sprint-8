@@ -17,7 +17,9 @@ let questionArray = [enterVerb, enterNoun, enterAdjective];
 
 //logic that will store the user inputs in the correct variables
 for (let i = numberOfQuestions; i >= 0; i--) {
+    console.log(i);
     console.log(questionCounter++);
+    console.log(questionArray[questionCounter]);
 }
 
 //the story
