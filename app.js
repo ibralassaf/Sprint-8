@@ -15,6 +15,9 @@ let enterAdjective = prompt("Enter an adjective");
 //push user inputs into array
 let questionArray = [enterVerb, enterNoun, enterAdjective];
 
+//read the zero-th index (of your array) *first*, and *then* increase the counter).
+console.log(questionArray[0]);
+
 //logic that will store the user inputs in the correct variables
 for (let i = numberOfQuestions; i >= 0; i--) {
     console.log(i);
