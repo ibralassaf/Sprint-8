@@ -1,10 +1,5 @@
 //originalStory 'In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]}. Word got out that the team had "debugged" the ${userInputs[2]}'
 
-//the story
-let originalStory = `In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]}. Word got out that the team had "debugged" the ${userInputs[2]}`;
-//array of user inputs
-let userInputs = [];
-
 //Total question
 let numberOfQuestions = 3;
 
@@ -17,6 +12,13 @@ let enterAdjective = prompt("Enter an adjective");
 let questionArray = [enterVerb, enterNoun, enterAdjective];
 
 //logic that will store the user inputs in the correct variables
-for (let i = questions; i >= 0; i--) {
-    console.log(i);
+for (let i = numberOfQuestions; i >= 0; i--) {
+    console.log(questionArray[i]);
 }
+
+let questionCounter = 0;
+
+//the story
+let originalStory = `In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]}. Word got out that the team had "debugged" the ${userInputs[2]}`;
+//array of user inputs
+let userInputs = [];
