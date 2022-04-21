@@ -22,11 +22,16 @@ for (let i = totalQuestion; i >= 0; i--) {
     console.log(
         questionArray[questionCounter] + `... (${totalQuestion} questions left)`
     );
-    userInputs.push(
-        prompt(
-            questionArray[questionCounter] + `... (${totalQuestion} questions left)`
-        )
+    var checkInput = prompt(
+        questionArray[questionCounter] + `... (${totalQuestion} questions left)`
     );
+
+    if (checkInput === "") {
+        userInputs.push(`THE USER DIDN'T WRITE ANYTHING`);
+    } else {
+        userInputs.push(checkInput);
+    }
+
     console.log(`This is the current "questionCounter" : ${questionCounter}`);
     console.log(userInputs);
     questionCounter++;
