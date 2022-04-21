@@ -9,10 +9,10 @@ let questionCounter = 0;
 
 //question array
 let questionArray = [
-    "Enter your full name",
-    "Enter your favorite hobby",
-    "Enter your favorite programming language",
-    "Enter your favorite food",
+    "What is your name?",
+    "Tell me about your favorite hobby",
+    "What about your favorite programming language?",
+    "well, what about your favorite food?!",
 ];
 
 //array of user inputs
@@ -33,8 +33,9 @@ for (let i = totalQuestion; i >= 0; i--) {
     totalQuestion--;
 }
 alert(
-    "All done! Ready for your totally-accurate, not-at-all confusing history of tech??"
+    "All done! Ready for your totally-accurate, not-at-all confusing summary of yourself??"
 );
-
 //the story
-//let originalStory = `In ${userInputs[0]}, computer pioneer ${userInputs[1]} found herself working on a ${userInputs[2]}. Word got out that the team had "debugged" the ${userInputs[2]}`;
+let originalStory = `<h2>Hello my name is ${userInputs[0]}, and my favorite hobby is ${userInputs[1]} also my favorite programming language is ${userInputs[2]}. and I really love to eat ${userInputs[3]}</h2>`;
+
+document.write(originalStory);
